@@ -5,16 +5,17 @@ public class day33 {
     b. luas segitiga
     */
     public static void main(String[] args) {
-     int a, b, c, t;
-     a = 20;
-     b = 16;
-     c = 16;
-     t = 14;
+    int a, b, c, keliling;
+    double luas, t;
+     a = 10;
+     b = 10;
+     c = 10;
+     t = Math.sqrt(Math.pow(a, 2)- Math.pow(b/2, 2));
      
-     int keliling = a + b + c;
+    keliling = a + b + c;
         System.out.printf("keliling dari Segitiga %d %d %d adalah %d %n", a , b , c , keliling);
      
-    double luas = 0.5 * a * t;
+    luas = 0.5 * a * t;
         System.out.println("Luas dari Segitiga adalah " + luas);
     }
     

@@ -8,7 +8,7 @@ public class day47 {
         Scanner sc = new Scanner(System.in);      
         
         int[] array = new int[5];
-        int arraybaru = 0; 
+        int size = 0; 
 
         while (true) {
             System.out.println("Array saat ini: " + Arrays.toString(array));
@@ -19,13 +19,13 @@ public class day47 {
             if (input == 0) {
                 break; 
             }
-            if (arraybaru == array.length) {
+            if (size == array.length) {
                 array = Arrays.copyOf(array, array.length * 2);
             }
-            array[arraybaru] = input;
+            array[size] = input;
             arraybaru++;
         }
-        System.out.println("Array akhir: " + Arrays.toString(Arrays.copyOf(array, arraybaru)));
+        System.out.println("Array akhir: " + Arrays.toString(Arrays.copyOf(array, size)));
         sc.close();
     }
 }

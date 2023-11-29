@@ -31,6 +31,7 @@ public class day52 {
                     
                 default:
                     System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+                    break;
             }
          scan.close();
     }

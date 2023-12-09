@@ -10,5 +10,6 @@ public class day62 {
          if(min>=umur[i]){
              min = umur[i];}
         }System.out.println(maks);
+         System.out.println(maks);
     }
 }
